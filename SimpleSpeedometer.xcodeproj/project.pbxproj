@@ -16,6 +16,8 @@
 		F9902BFA264171560040A656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9902BF8264171560040A656 /* LaunchScreen.storyboard */; };
 		F9902C05264171560040A656 /* SimpleSpeedometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9902C04264171560040A656 /* SimpleSpeedometerTests.swift */; };
 		F9902C10264171560040A656 /* SimpleSpeedometerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9902C0F264171560040A656 /* SimpleSpeedometerUITests.swift */; };
+		F9902C20264243B70040A656 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9902C1F264243B70040A656 /* LocationHelper.swift */; };
+		F9902C222642457C0040A656 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9902C212642457C0040A656 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		F9902C0B264171560040A656 /* SimpleSpeedometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSpeedometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9902C0F264171560040A656 /* SimpleSpeedometerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSpeedometerUITests.swift; sourceTree = "<group>"; };
 		F9902C11264171560040A656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9902C1F264243B70040A656 /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
+		F9902C212642457C0040A656 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		F9902BE9264171540040A656 /* SimpleSpeedometer */ = {
 			isa = PBXGroup;
 			children = (
+				F9902C1E26423C8D0040A656 /* ViewModel */,
+				F9902C1D26423C820040A656 /* Helper */,
 				F9902BEA264171540040A656 /* AppDelegate.swift */,
 				F9902BEC264171540040A656 /* SceneDelegate.swift */,
 				F9902BEE264171540040A656 /* ContentView.swift */,
@@ -137,6 +143,22 @@
 				F9902C11264171560040A656 /* Info.plist */,
 			);
 			path = SimpleSpeedometerUITests;
+			sourceTree = "<group>";
+		};
+		F9902C1D26423C820040A656 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F9902C1F264243B70040A656 /* LocationHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F9902C1E26423C8D0040A656 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9902C212642457C0040A656 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +295,8 @@
 				F9902BF2264171540040A656 /* SimpleSpeedometer.xcdatamodeld in Sources */,
 				F9902BED264171540040A656 /* SceneDelegate.swift in Sources */,
 				F9902BEF264171540040A656 /* ContentView.swift in Sources */,
+				F9902C20264243B70040A656 /* LocationHelper.swift in Sources */,
+				F9902C222642457C0040A656 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +469,7 @@
 				DEVELOPMENT_TEAM = UAEL4H37J9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SimpleSpeedometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +491,7 @@
 				DEVELOPMENT_TEAM = UAEL4H37J9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SimpleSpeedometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
